@@ -1,5 +1,6 @@
 :root {
   --primary-color: #ea625c;
+  --primary-color-dark: #c9514c;
   --text-color: #333;
   --font-text: 'Roboto', sans-serif;
 
@@ -38,6 +39,29 @@ img {
 *:focus {
   outline: 2px dashed var(--primary-color);
   outline-offset: 2px;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  transition: background-color 0.4s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.button:active {
+  opacity: 0.6;
 }
 
 /* CONTAINER */
@@ -132,4 +156,52 @@ img {
   border: 0;
   color: #666;
   border-bottom: 1px solid var(--text-color);
+}
+
+
+
+/* MAIN CONTENT */
+
+/* Hero section styles */
+
+.hero {
+  padding-top: 145px;
+  padding-bottom: 180px;
+  border-bottom: 2px solid #ddd;
+  background-image: url(../images/intro-bg.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 545px) bottom;
+}
+
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
+}
+
+.lead-cta-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.lead-cta-text {
+  color: #777;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+}
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url('../images/intro-bg@2x.png');
+  }
 }
