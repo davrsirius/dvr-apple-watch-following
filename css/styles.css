@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ea625c;
+  --text-color:#333;
+  --font-text: 'Roboto', sans-serif;
+
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -16,11 +23,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
@@ -33,7 +40,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
