@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ea625c;
-  --text-color:#333;
+  --text-color: #333;
   --font-text: 'Roboto', sans-serif;
 
 }
@@ -51,4 +51,81 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE HEADER */
+
+.site-header {
+  padding: 30px 0;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-logo {
+  margin-right: auto;
+  transition: opacity 0.3s ease;
+}
+
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+
+.site-header-logo:active {
+  opacity: 0.6;
+}
+
+.site-header-logo-img {
+  display: block;
+  width: 35px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* SITENAV */
+.sitenav {
+  margin-right: 40px;
+}
+
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sitenav-link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom ease 0.3s;
+}
+
+.sitenav-link:hover {
+  border-bottom: 3px solid var(--text-color);
+}
+
+/* SEARCH FORM */
+.search-form {}
+
+.search-form-input {
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 6px 0;
+  border: 0;
+  color: #666;
+  border-bottom: 1px solid var(--text-color);
 }
