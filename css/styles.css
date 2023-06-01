@@ -45,6 +45,7 @@ img {
 .button {
   display: inline-block;
   border: 0;
+  min-width: 260px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 12px;
@@ -53,6 +54,7 @@ img {
   font-size: 18px;
   line-height: 1.5;
   font-weight: bold;
+  text-align: center;
   transition: background-color 0.4s ease;
 }
 
@@ -82,6 +84,7 @@ img {
   background-color: var(--primary-color);
   transition: width 0.4s ease;
 }
+
 .lined-link:hover::before {
   width: 60px;
 }
@@ -207,11 +210,19 @@ img {
   line-height: 1.2;
   color: #000;
 }
+.lead-cta-white .lead-cta-heading {
+  color: #fff;
+}
 
 .lead-cta-text {
   color: #777;
   padding-left: 37px;
   border-left: 3px solid #888;
+}
+
+.lead-cta-white .lead-cta-text {
+  color: #fff;
+  border-color: #fff;
 }
 
 
@@ -264,6 +275,39 @@ img {
     32px 0 0 0 #ddd;
 }
 
+
+/* Promo */
+
+.promo {
+  padding: 70px 0;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+}
+
+
+/* Runners section styles */
+
+.runners {
+  padding: 240px 0;
+  background-image: url('../images/runners.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
 
 
 /* RETINA BG */
